@@ -9,14 +9,17 @@ void selectionSort(int ar[]) {
     // when the loop is finished update the currentMinimum as the first element in the sorted partition
 
     for (i = 0; i < size; i++) {
-        for(j = 0; j < size; j++) {
-            if(ar[i] <ar[j]) {
-                currentMinimum = ar[j];
-                temp = ar[i];
-                ar[i] = currentMinimum;
-                ar[j] = temp;
+        currentMinimum = i;
+        // j keeps track of the current item
+        for(j = i+1; j < size; j++) {
+            if(ar[currentMinimum] > ar[j]) {
+                currentMinimum = j;
             }
         }
+        // swap the numbers
+        temp = ar[i];
+        ar[i] = ar[currentMinimum];
+        ar[currentMinimum] = temp;
     }
 
     printf("The array elements are : ");
