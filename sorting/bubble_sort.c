@@ -44,5 +44,5 @@ void main() {
     }
 
     bubbleSort(ar, size);
-    
+    printf("\n");
 }

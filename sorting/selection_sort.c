@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-#define size 7
+#define size 4
 
 void selectionSort(int ar[]) {
     register int i, j;
@@ -22,7 +22,7 @@ void selectionSort(int ar[]) {
         ar[currentMinimum] = temp;
     }
 
-    printf("The array elements are : ");
+    printf("The array in sorted order : ");
     for (i = 0; i < size; i++) {
         printf("%d ",ar[i]);
     }
@@ -39,4 +39,6 @@ void main() {
     }
     
     selectionSort(ar);
+
+    printf("\n");
 }

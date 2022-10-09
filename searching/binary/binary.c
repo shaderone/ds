@@ -45,5 +45,6 @@ void main() {
     scanf("%d",&target);
 
     binarySearch(ar, target);
+    printf("\n");
     
 }

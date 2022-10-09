@@ -32,4 +32,5 @@ void main() {
     scanf("%d", &target);
 
     linearSearch(ar, size, target);
+    printf("\n");
 }
